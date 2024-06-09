@@ -1,0 +1,35 @@
+version: "3"
+
+services:
+  db:
+    build: ./db
+  user:
+    build: ./user
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    depends_on:
+      - db
+    volumes:
+      - ./db/mydatabase.db:/db/mydatabase.db
+  admin:
+    build: ./admin
+    ports:
+      - "3001:3001"
+    networks:
+      - app-network
+    volumes:
+      - ./db/mydatabase.db:/db/mydatabase.db
+
+  machine:
+    build: ./coffeeMachine
+    ports:
+      - "3002:3002"
+    networks:
+      - app-network
+    volumes:
+      - ./db/mydatabase.db:/db/mydatabase.db
+networks:
+  app-network:
+    driver: bridge

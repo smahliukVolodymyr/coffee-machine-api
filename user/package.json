@@ -1,0 +1,14 @@
+{
+  "name": "user_service",
+  "version": "1.0.0",
+  "description": "UserService",
+  "main": "UserService.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.1",
+    "sqlite3": "^5.1.7"
+  },
+  "scripts": {
+    "start": "node UserService.js"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "admin_service",
+  "version": "1.0.0",
+  "description": "AdminService",
+  "main": "AdminService.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.1",
+    "sqlite3": "^5.1.7"
+  },
+  "scripts": {
+    "start": "node AdminService.js"
+  }
+}

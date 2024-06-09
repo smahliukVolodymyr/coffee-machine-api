@@ -1,0 +1,16 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "database",
+  "main": "dbInit.js",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.1",
+    "sqlite3": "^5.1.7"
+  },
+  "scripts": {
+    "start": "node dbInit.js"
+  }
+}
